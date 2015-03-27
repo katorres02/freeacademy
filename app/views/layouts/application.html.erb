@@ -8,42 +8,48 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="container">
+		<nav class="navbar navbar-default " style="border-radius: 0;">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> Free Academy</a>
+		      
+		    </div>
 
-	<nav class="navbar navbar-default" style="border-radius: 0;">
-	  <div class="container">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> Free Academy</a>
-	      
-	    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Cursos</a></li>
+		        <li><a href="#">Blog</a></li>
+		        <li><a href="#">Registrar</a></li>
+		        <li><a href="#">Iniciar Sesión</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+		
+		<%= yield %>
+	
 
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Cursos</a></li>
-	        <li><a href="#">Foros</a></li>
-	        <li><a href="#">Registrar</a></li>
-	        <li><a href="#">Iniciar Sesión</a></li>
+	<footer>
+	  <div class="row">
+	    <div class="col-lg-12">
+	      <ul class="list-unstyled">
+	        <li class="pull-right"><a href="#top">Back to top</a></li>
 	      </ul>
+	      <p>Carlos Torres</p>
+	      <p><span class="glyphicon glyphicon-copyright-mark">2015</p>
 	    </div>
 	  </div>
-	</nav>
-
-	<div class="container">
-		<%= yield %>
-	</div>
-
-	<footer class="footer">
-		<div class="container">
-			<p class="text-muted">Carlos Torres.</p>
-			<p class="text-muted"> <span class="glyphicon glyphicon-copyright-mark"></span> 2015.</p>
-		</div>
 	</footer>
+
+	</div>
 
 </body>
 </html>
